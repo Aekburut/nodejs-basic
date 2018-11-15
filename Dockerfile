@@ -4,7 +4,7 @@ WORKDIR /node-app
 # Install deps for production only
 COPY ./package*.json ./
 RUN npm install --production && \
-  npm cache clean --force
+  npm cache clean --forc
 COPY ./src ./src
 # Set system environments
 ENV NODE_ENV=production
